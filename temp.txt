@@ -1,0 +1,74 @@
+Traceback (most recent call last):
+  File "denoise.py", line 162, in <module>
+    optimize(OPTIMIZER, p, closure, LR, num_iter)
+  File "/scratch0/aminjun/Sun Oct 20 20:36:26 EDT 2019Denoise/utils/common_utils.py", line 230, in optimize
+    closure()
+  File "denoise.py", line 118, in closure
+    out = net(net_input)
+  File "/cmlscratch/aminjun/cenv/lib/python3.5/site-packages/torch/nn/modules/module.py", line 547, in __call__
+    result = self.forward(*input, **kwargs)
+  File "/cmlscratch/aminjun/cenv/lib/python3.5/site-packages/torch/nn/modules/container.py", line 92, in forward
+    input = module(input)
+  File "/cmlscratch/aminjun/cenv/lib/python3.5/site-packages/torch/nn/modules/module.py", line 547, in __call__
+    result = self.forward(*input, **kwargs)
+  File "/scratch0/aminjun/Sun Oct 20 20:36:26 EDT 2019Denoise/models/common.py", line 22, in forward
+    inputs.append(module(input))
+  File "/cmlscratch/aminjun/cenv/lib/python3.5/site-packages/torch/nn/modules/module.py", line 547, in __call__
+    result = self.forward(*input, **kwargs)
+  File "/cmlscratch/aminjun/cenv/lib/python3.5/site-packages/torch/nn/modules/container.py", line 92, in forward
+    input = module(input)
+  File "/cmlscratch/aminjun/cenv/lib/python3.5/site-packages/torch/nn/modules/module.py", line 547, in __call__
+    result = self.forward(*input, **kwargs)
+  File "/cmlscratch/aminjun/cenv/lib/python3.5/site-packages/torch/nn/modules/container.py", line 92, in forward
+    input = module(input)
+  File "/cmlscratch/aminjun/cenv/lib/python3.5/site-packages/torch/nn/modules/module.py", line 547, in __call__
+    result = self.forward(*input, **kwargs)
+  File "/scratch0/aminjun/Sun Oct 20 20:36:26 EDT 2019Denoise/models/common.py", line 22, in forward
+    inputs.append(module(input))
+  File "/cmlscratch/aminjun/cenv/lib/python3.5/site-packages/torch/nn/modules/module.py", line 547, in __call__
+    result = self.forward(*input, **kwargs)
+  File "/cmlscratch/aminjun/cenv/lib/python3.5/site-packages/torch/nn/modules/container.py", line 92, in forward
+    input = module(input)
+  File "/cmlscratch/aminjun/cenv/lib/python3.5/site-packages/torch/nn/modules/module.py", line 547, in __call__
+    result = self.forward(*input, **kwargs)
+  File "/cmlscratch/aminjun/cenv/lib/python3.5/site-packages/torch/nn/modules/container.py", line 92, in forward
+    input = module(input)
+  File "/cmlscratch/aminjun/cenv/lib/python3.5/site-packages/torch/nn/modules/module.py", line 547, in __call__
+    result = self.forward(*input, **kwargs)
+  File "/scratch0/aminjun/Sun Oct 20 20:36:26 EDT 2019Denoise/models/common.py", line 22, in forward
+    inputs.append(module(input))
+  File "/cmlscratch/aminjun/cenv/lib/python3.5/site-packages/torch/nn/modules/module.py", line 547, in __call__
+    result = self.forward(*input, **kwargs)
+  File "/cmlscratch/aminjun/cenv/lib/python3.5/site-packages/torch/nn/modules/container.py", line 92, in forward
+    input = module(input)
+  File "/cmlscratch/aminjun/cenv/lib/python3.5/site-packages/torch/nn/modules/module.py", line 547, in __call__
+    result = self.forward(*input, **kwargs)
+  File "/cmlscratch/aminjun/cenv/lib/python3.5/site-packages/torch/nn/modules/container.py", line 92, in forward
+    input = module(input)
+  File "/cmlscratch/aminjun/cenv/lib/python3.5/site-packages/torch/nn/modules/module.py", line 547, in __call__
+    result = self.forward(*input, **kwargs)
+  File "/scratch0/aminjun/Sun Oct 20 20:36:26 EDT 2019Denoise/models/common.py", line 22, in forward
+    inputs.append(module(input))
+  File "/cmlscratch/aminjun/cenv/lib/python3.5/site-packages/torch/nn/modules/module.py", line 547, in __call__
+    result = self.forward(*input, **kwargs)
+  File "/cmlscratch/aminjun/cenv/lib/python3.5/site-packages/torch/nn/modules/container.py", line 92, in forward
+    input = module(input)
+  File "/cmlscratch/aminjun/cenv/lib/python3.5/site-packages/torch/nn/modules/module.py", line 547, in __call__
+    result = self.forward(*input, **kwargs)
+  File "/cmlscratch/aminjun/cenv/lib/python3.5/site-packages/torch/nn/modules/container.py", line 92, in forward
+    input = module(input)
+  File "/cmlscratch/aminjun/cenv/lib/python3.5/site-packages/torch/nn/modules/module.py", line 547, in __call__
+    result = self.forward(*input, **kwargs)
+  File "/scratch0/aminjun/Sun Oct 20 20:36:26 EDT 2019Denoise/models/common.py", line 22, in forward
+    inputs.append(module(input))
+  File "/cmlscratch/aminjun/cenv/lib/python3.5/site-packages/torch/nn/modules/module.py", line 547, in __call__
+    result = self.forward(*input, **kwargs)
+  File "/cmlscratch/aminjun/cenv/lib/python3.5/site-packages/torch/nn/modules/container.py", line 92, in forward
+    input = module(input)
+  File "/cmlscratch/aminjun/cenv/lib/python3.5/site-packages/torch/nn/modules/module.py", line 547, in __call__
+    result = self.forward(*input, **kwargs)
+  File "/cmlscratch/aminjun/cenv/lib/python3.5/site-packages/torch/nn/modules/batchnorm.py", line 81, in forward
+    exponential_average_factor, self.eps)
+  File "/cmlscratch/aminjun/cenv/lib/python3.5/site-packages/torch/nn/functional.py", line 1652, in batch_norm
+    raise ValueError('Expected more than 1 value per channel when training, got input size {}'.format(size))
+ValueError: Expected more than 1 value per channel when training, got input size torch.Size([1, 128, 1, 1])

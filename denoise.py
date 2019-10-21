@@ -1,6 +1,6 @@
 from __future__ import print_function
 import matplotlib.pyplot as plt
-%matplotlib inline
+#%matplotlib inline
 
 import os
 #os.environ['CUDA_VISIBLE_DEVICES'] = '3'
@@ -26,9 +26,9 @@ sigma_ = sigma/255.
 # fname = 'data/denoising/snail.jpg'
 
 ## denoising
-fname = 'data/denoising/snail.png'
+fname = 'data/denoising/snail.jpg'
 if fname == 'data/denoising/snail.jpg':
-    img_noisy_pil = crop_image(get_image(fname, imsize)[0], d=32)
+    img_noisy_pil = crop_image(get_image(fname, 128)[0], d=32)
     img_noisy_np = pil_to_np(img_noisy_pil)
     
     # As we don't have ground truth
