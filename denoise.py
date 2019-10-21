@@ -26,7 +26,7 @@ sigma_ = sigma/255.
 # fname = 'data/denoising/snail.jpg'
 
 ## denoising
-fname = 'data/denoising/F16_GT.png'
+fname = 'data/denoising/snail.png'
 if fname == 'data/denoising/snail.jpg':
     img_noisy_pil = crop_image(get_image(fname, imsize)[0], d=32)
     img_noisy_np = pil_to_np(img_noisy_pil)
