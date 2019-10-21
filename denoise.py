@@ -13,11 +13,22 @@ import torch.optim
 
 from skimage.measure import compare_psnr
 from utils.denoising_utils import *
+from torchvision.transforms import ToPILImage
 
 torch.backends.cudnn.enabled = True
 torch.backends.cudnn.benchmark =True
 dtype = torch.cuda.FloatTensor
 
+def visualize(img: torch.Tensor, *path):
+    img = img[0]
+    to_pil = ToPILImage()
+    pil = to_pil(img.cpu())
+    path = [str(folder) for folder in path]
+    child = path[-1]
+    par = 'desktop'
+    os.makedirs(par, exist_ok=True)
+    file_name = "{}/{}.png".format(par, child)
+    pil.save(file_name)
 imsize =-1
 PLOT = True
 sigma = 25
@@ -135,6 +146,7 @@ def closure():
     # So 'PSRN_gt', 'PSNR_gt_sm' make no sense
     print ('Iteration %05d    Loss %f   PSNR_noisy: %f   PSRN_gt: %f PSNR_gt_sm: %f' % (i, total_loss.item(), psrn_noisy, psrn_gt, psrn_gt_sm), '\r', end='')
     if  PLOT and i % show_every == 0:
+        visualize(out, i)
         out_np = torch_to_np(out)
         plot_image_grid([np.clip(out_np, 0, 1), 
                          np.clip(torch_to_np(out_avg), 0, 1)], factor=figsize, nrow=1)
