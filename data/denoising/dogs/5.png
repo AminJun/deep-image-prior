@@ -1,0 +1,7 @@
+#!/bin/bash
+
+counter=0
+ls . | while read i ; do 
+	mv "${i}" "${counter}.png"
+	counter=$((counter+1))
+done
